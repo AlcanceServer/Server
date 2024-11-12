@@ -1,0 +1,18 @@
+body{
+    text-align: center;
+}
+
+input{
+    width: 400px;
+    position: relative;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px black solid;
+}
+input[type="submit"]{
+    width: 200px;
+    cursor: pointer;
+    background-color: green;
+    border: 2px darkgreen solid;
+    border-radius: 10px;
+}
