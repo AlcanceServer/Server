@@ -1,8 +1,16 @@
 body{
     text-align: center;
+    background-color: black;
+    color: white;
+}
+
+h1,h2{
+    top:100px;
+    position: relative;
 }
 
 input{
+    top:100px;
     width: 400px;
     position: relative;
     padding: 10px;
@@ -11,6 +19,7 @@ input{
 }
 input[type="submit"]{
     width: 200px;
+    color: white;
     cursor: pointer;
     background-color: green;
     border: 2px darkgreen solid;
