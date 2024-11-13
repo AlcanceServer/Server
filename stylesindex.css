@@ -1,10 +1,13 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
 body {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
     margin: 0;
-    font-family: Arial, sans-serif;
     background: linear-gradient(135deg, #1c1c1c, #333);
     color: white;
 }
@@ -43,10 +46,11 @@ input[type="text"], input[type="password"] {
 }
 
 #btn_entrar {
-    width: 100%;
+    width: 107%;
     padding: 10px;
     font-size: 1rem;
     color: white;
+    font-weight: bold;
     cursor: pointer;
     background-color: #4CAF50;
     border: none;
@@ -64,6 +68,65 @@ input[type="text"], input[type="password"] {
     opacity: 1;
     transition: all 0.2s;
 }
+
+#togglePassword {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    cursor: pointer;
+}
+
+#eyeIcon {
+    display: inline-block;
+    width: 18px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid #4CAF50;
+    position: absolute;
+    top: 3.5px;
+    right: -20px;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    opacity: 1;
+    scale: 1;
+}
+
+#eyeIcon::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #4CAF50;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease;
+}
+
+.eyeClosed #eyeIcon {
+    background-color: transparent;
+    border-color: #4CAF50;
+    opacity: 1; 
+    transform: scale(0.8);
+}
+
+.eyeClosed #eyeIcon::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: #4CAF50;
+    transform: rotate(45deg);
+    top: 50%;
+    left: -1px;
+    transition: all 0.3s ease;
+    opacity: 1;
+}
+
 
 
 #btn_entrar:hover {
