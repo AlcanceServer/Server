@@ -29,7 +29,7 @@ h1{
 
 #user_img{
     width: 50px;
-    filter: invert(1);
+    filter: brightness(0) saturate(100%) invert(59%) sepia(12%) saturate(2112%) hue-rotate(73deg) brightness(97%) contrast(88%);
     cursor: pointer;
     margin-right: 5px;
 }
@@ -115,6 +115,7 @@ h1{
     transition: all 0.5s;
     opacity: 0;
     border: 2px solid white;
+    color: #4CAF50;
 }
 
 #burguer_nav p:hover{
