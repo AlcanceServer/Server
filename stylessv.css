@@ -1,18 +1,41 @@
 *{
     font-family: 'Poppins', sans-serif;
+    user-select: none;
 }
 
 body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-    background: linear-gradient(135deg, #1c1c1c, #333);
     color: white;
+    height: 100vh;
+    background: linear-gradient(135deg, #1c1c1c, #333);
+    overflow: hidden;
 }
 h1{
     font-size: 2rem;
-    margin-bottom: 1rem;
     color: #4CAF50;
+}
+
+#user_tab{
+    background-color: #1c1c1c;
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    padding: 10px;
+    top: 0;
+    right: 0;
+    scale: 1.2;
+}
+
+#user_img{
+    width: 50px;
+    filter: invert(1);
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#user_tab p{
+    position: absolute;
+    top:40px;
+    right: 18px;
 }
