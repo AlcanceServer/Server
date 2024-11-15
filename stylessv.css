@@ -19,23 +19,119 @@ h1{
     width: max-content;
     height: max-content;
     position: absolute;
-    right: 20px;
-    top: 20px;
-    padding: 10px;
-    top: 0;
-    right: 0;
+    padding: 15px;
+    top: -10px;
+    right: -10px;
     scale: 1.2;
+    border-radius: 20px;
+    z-index: 10;
 }
 
 #user_img{
     width: 50px;
     filter: invert(1);
     cursor: pointer;
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 #user_tab p{
     position: absolute;
     top:40px;
-    right: 18px;
+    right: 20px;
+}
+
+#close_nav{
+    color: white;
+    left: 90% !important;
+    top: -10px !important;
+    cursor: pointer;
+    font-size: 15pt;
+    transition: all  0.2s ease;
+}
+
+#close_nav:hover{
+    color: red;
+    scale: 1.2;
+}
+
+.nav_bar_open h1{
+    color: #4CAF50;
+    position: absolute;
+    top: 5px;
+    left: 25%;
+}
+
+.nav_bar_open{
+    margin-right: 20px;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.5);
+    position: relative;
+    height: 100vh;
+    width: 15%;
+    transform: scaleY(1);
+    text-align: center;
+    justify-content: center;
+    transition: all 0.5s;
+}
+
+.nav_bar_closed{
+    margin-right: 20px;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.5);
+    position: relative;
+    height: 100vh;
+    width: 0%;
+    transform: scaleY(0);
+    text-align: center;
+    justify-content: center;
+    transition: all 0.5s;
+}
+
+.nav_bar_open p{
+    cursor: pointer;
+    transition: scale 0.2s ease;
+}
+.nav_bar_open p:hover{
+    scale: 1.5;
+}
+
+#burguer_nav{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    justify-content: center;
+    text-align: center;
+    left:-50px;
+    position: fixed;
+    top: 36%;
+    transition: all 0.5s;
+    opacity: 0;
+    border: 2px solid white;
+}
+
+#burguer_nav p:hover{
+    scale: 1.2;
+}
+
+#burguer_nav p{
+    font-size: 25pt;
+    margin-left: 25px;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+#content{
+    display: flex;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
 }
