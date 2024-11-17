@@ -36,7 +36,7 @@ label {
 }
 
 input[type="text"], input[type="password"] {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     margin-bottom: 1rem;
     border-radius: 8px;
@@ -46,7 +46,7 @@ input[type="text"], input[type="password"] {
 }
 
 #btn_entrar {
-    width: 107%;
+    width: 103%;
     padding: 10px;
     font-size: 1rem;
     color: white;
@@ -87,7 +87,7 @@ input[type="text"], input[type="password"] {
     border: 2px solid #4CAF50;
     position: absolute;
     top: 3.5px;
-    right: -20px;
+    right: -10px;
     background-color: transparent;
     transition: all 0.3s ease;
     opacity: 1;
