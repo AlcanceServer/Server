@@ -75,7 +75,7 @@ btnEntrar.addEventListener("click", () => {
                 sessionStorage.setItem("Utilizador", nome.value);
                 sessionStorage.setItem("Success", "true");
                 setTimeout(() => {
-                    window.open("server.html", "_self");
+                    window.open("/html/server.html", "_self");
                 }, 1000);
 
                 return; // Interrompe a função ao fazer login
