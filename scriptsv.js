@@ -7,6 +7,10 @@ var burguer_nav = document.getElementById("burguer_nav")
 
 document.getElementById("welcome_user").innerText = sessionStorage.getItem("Utilizador");
 
+function setAccentColor(color) {
+    document.documentElement.style.setProperty('--accent-color', color);
+}
+
 function call_menu(n) {
     const actions = navBar.querySelectorAll("p");
     if (n >= 49 && n <= 54 && actions[n - 49]) {
@@ -64,9 +68,6 @@ document.addEventListener("keydown",(event)=>{
     }
 })
 
-function setAccentColor(color) {
-    document.documentElement.style.setProperty('--accent-color', color);
-}
 
 
 
